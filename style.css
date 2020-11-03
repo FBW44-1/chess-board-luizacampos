@@ -1,0 +1,77 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    100%
+    min-width: 320px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.row{
+    padding: 0;
+    width: 100%;
+    min-height: 1px;
+    float: left;
+}
+
+.col{
+    min-height: 40px;
+    height: 130px;
+    width: 12.5%;
+    margin-left: 0px;
+    margin-right: 0px;
+    display: block;
+    float: left;
+}
+
+.col.black{
+    background-color: black;
+}
+
+.col.white{
+    background-color: white;
+}
+
+img{
+    width: 80%;
+    height: 100px;
+    padding-left: 30px;
+    padding-top: 30px;
+    display: block;
+}
+
+.container{
+    position: relative;
+    height: 100%;
+}
+
+.overlay{
+    position: absolute;
+    opacity: 0;
+    transition: 5s ease;
+    background-color: thistle;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.container:hover .overlay{
+    opacity: 1;
+}
+
+.text{
+    color: black;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
